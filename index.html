@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Strategical Calculator</title>
+    <link rel="icon" href="calculatorFavicon.svg">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+    crossorigin="anonymous" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Sansita+Swashed&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="btnAnimation.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>Strategical Calculator</h1>
+    </header>
+
+    <main>
+      <section class="section_1">
+
+        <div class="row section_1_splitContainer">
+          <div class="col-lg-7 section_1_txtContainer">
+            <h2>Let the Computer do his job, Get result in single click</h2>
+            <p>What you can Calculate with it:</p>
+            <div id="btnContainer">
+              <div class="wrapper">
+                <a href="#"><span>Mean</span></a></div>
+              <div class="wrapper">
+                <a href="#"><span>Variance</span></a>
+              </div>
+              <div class="wrapper">
+                <a href="#"><span>Standard Deviance</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 calculator">
+
+            <h4>Enter Data Points here:</h4>
+            <input id = "values" type="text" placeholder="Only comma separate values">
+
+            <h5>Select what you want to claculate</h5>
+            <select class="" id="option">
+              <option value=""></option>
+              <option value="Mean">Mean</option>
+              <option value="Variance">Variance</option>
+              <option value="Standard Deviance">Standard Deviance</option>
+            </select>
+            <br>
+            <a href="#section_result" id ="showResult">Calculate <span id="optionValue"></span> </a>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section id="section_result">
+        <h2>Result</h2>
+        <p id="result">Here Comes the Result of the above Calculation</p>
+      </section>
+    </main>
+
+    <footer>
+      Developed By <a target="_blank" href="https://instagram.com/mrityunjay.404">Mrityunjay</a>
+    </footer>
+
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
